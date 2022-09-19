@@ -70,7 +70,7 @@ function getCriteria() {
 
   //store all criteria into an object
   var criteriaObj = {
-    passwordLength: passwordLength, 
+    passwordLength: getCriteria(passwordLength), 
   }
   //return the criteria object to the generate password function
   return criteriaObj
@@ -100,7 +100,6 @@ for (let i = 0 ; i <= passwordLength; i ++){
 }
 console.log(finishedPass);
 
-return finishedPass;
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
