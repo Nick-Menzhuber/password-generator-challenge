@@ -35,7 +35,7 @@ function generatePassword(){
     return generatePassword()
   }
   if(length<8 || length> 128){
-    alert("Please choose numbers between 8 - 128!");
+    alert("Please set a valid password length between 8 and 128.");
     return generatePassword()
   }
   //user sets character types
@@ -45,7 +45,7 @@ function generatePassword(){
   var hasSpecialChars = confirm("Should your password include special characters?");
 
   if(!hasUpperCase&&!hasLowerCase&&!hasNumbers&&!hasSpecialChars){
-    alert("Please select at least one character type");
+    alert("Please select at least one character type.");
     return generatePassword()
   }
 
